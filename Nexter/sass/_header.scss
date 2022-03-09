@@ -1,0 +1,87 @@
+.header {
+    padding: 2.5rem;
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-template-rows: 1fr min-content min-content 1fr min-content 1rem;
+    grid-template-columns: auto;
+    grid-column: 1 / 11;
+
+    background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("../img/hero.jpeg");
+    background-size: 100% 100%;
+
+    .logo {
+        height: 1.5rem;
+        justify-self: center;
+    }
+
+    h3 {
+        color: $color-primary;
+        margin: 0;
+        font-size: 0.8rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-family: $font-display;
+    }
+
+    h1 {
+        font-family: $font-display;
+        margin: 0;
+        font-size: 2.2rem;
+        color: $color-grey-light-1
+    }
+
+    .properties {
+        margin: 0;
+
+        button {
+            font-size: 0.7rem;
+            border: none;
+            display: inline-block;
+            color: $color-grey-light-1;
+            text-transform: uppercase;
+            background-color: $color-primary;
+            padding: 0.9rem;
+        }
+    }
+
+    .header_seenon_text {
+        display: flex;
+        justify-content: space-between;
+        color: $color-grey-light-1;
+        align-items: center;
+
+        &::before,
+        &::after {
+            content: "";
+            background-color: $color-grey-light-1;
+            height: 1px;
+            width: 40%;
+        }
+    }
+
+    .header_seenon_logos {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 55.75px;
+        }
+    }
+}
+
+@media(min-width:49rem) {
+    .header {
+        grid-row: 2/3;
+        grid-column: 1/8;
+
+    }
+}
+@media(min-width:61.5rem)
+{
+    .header {
+        grid-row: 1/2;
+        grid-column: 2/9;
+
+    }
+}

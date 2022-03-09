@@ -1,0 +1,41 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 200px);
+  -ms-grid-rows: (minmax(6rem, 1fr))[2];
+      grid-template-rows: repeat(2, minmax(6rem, 1fr));
+}
+
+.container .item--1 {
+  background-color: orangered;
+}
+
+.container .item--2 {
+  background-color: yellowgreen;
+}
+
+.container .item--3 {
+  background-color: blueviolet;
+}
+
+.container .item--4 {
+  background-color: palevioletred;
+}
+
+.container .item--5 {
+  background-color: royalblue;
+}
+
+.container .item--6 {
+  background-color: goldenrod;
+}
+
+.container .item--7 {
+  background-color: crimson;
+}
+
+.container .item--8 {
+  background-color: darkslategray;
+}
+/*# sourceMappingURL=practice.css.map */

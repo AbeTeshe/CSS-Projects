@@ -1,0 +1,109 @@
+.story_content
+{
+    grid-column:1/11;
+    background-color:$color-grey-light-1;
+    display: grid;
+    grid-template-rows: repeat(4,min-content);
+    grid-gap:1.5rem;
+    padding:2rem;
+    .heading_3
+    {
+        color:$color-primary;
+        text-transform: uppercase;
+        font-size:0.8rem;
+        font-weight: normal;
+        margin:0;
+        padding:0;
+    }
+    h2
+    {
+        line-height: 2.5rem;
+        font-size:2rem;
+        font-weight: normal;
+        color:$color-grey-dark-1;
+        margin:0;
+        padding:0;
+
+    }
+    .paragraph
+    {
+        color:$color-grey-dark-2;
+        font-size:0.7rem;
+        margin:0;
+        padding:0;
+    }
+    .properties
+    {
+        margin:0;
+        .button{
+        font-size:0.8rem;
+        border: none;
+        display:inline-block;
+        color:$color-grey-light-1;
+        text-transform: uppercase;
+        background-color:$color-primary;
+        padding:0.9rem;
+        }
+    }
+}
+.story_picture
+{
+    grid-column:1/11;
+    background-image:linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)),url("../img/back.jpg");
+    background-size:100% 100%;
+    padding:2rem;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    align-items: center;
+    .first_picture
+    {
+        grid-column:1/5;
+        grid-row: -1/1;
+        width:100%;
+    }
+    .second_picture
+    {
+        grid-column:4/7; 
+        width:100%;
+        grid-row:2/6;
+    }
+}
+@media(min-width:49rem) {
+    .story_picture
+    {
+        grid-row: 4/5;
+        grid-column: 1/6;
+        padding:0;
+        .first_picture
+    {
+        grid-column:2/6;
+        grid-row: 2/6;
+        height: 100%;
+    }
+        .second_picture
+        {
+            grid-column:4/7; 
+            grid-row:3/7;
+            width:115%;
+            z-index:3;
+        }
+    }
+    .story_content {
+        grid-column: 6/-1;
+        justify-content: center;
+        padding:15% 15%;
+    }
+    
+}
+@media(min-width:61.5rem)
+{
+    .story_picture
+    {
+        grid-row: 3/4;
+        grid-column: 2/7;
+    }
+    .story_content {
+        grid-column: 7/-1;
+    }
+}

@@ -1,0 +1,233 @@
+/*the body part*/
+
+.intro
+{
+    width:100%;
+    height:46vh;
+    position:relative;
+    background:linear-gradient(to top,rgba(80,68,18,0.6) 10%,transparent),url("Images/freedom.jpg") no-repeat  left 0% top 20%/cover border-box;
+    z-index:-1;
+}
+.title
+{
+ color:white;
+ font-size:1em;
+ position:absolute;
+ top:80%;
+ left:5%;
+ text-shadow: 1px 1px 2px rgba(0,0,0,1);
+}
+.text
+{
+    color:#2ddf5c;
+    font-size:1.3rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+}
+/**the plans section*/
+.plan
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.plan article
+{
+    text-align: center;
+    width:80%;
+    padding:1rem 0;
+    margin-bottom:1rem;
+}
+/** first and second plan*/
+.free,.premium
+{
+    background-color:#d5ffdc;
+    
+}
+.plan>article>ul
+{
+    list-style: none;
+    padding:0;
+}
+/** choose plan button*/
+
+/**headers*/
+article h1, article h2
+{
+    font-size:.9em;
+}
+.plan-title
+{
+    color:#0e4f1f;
+}
+.cost
+{
+    color:#858585;
+}
+article h3
+{
+    font-size:.9em; 
+    
+}
+.plan article>ul
+{
+    font-size:.8em;
+    font-weight: bold;
+}
+/** recommended plan section*/
+.recommended
+{
+    background-color:#19b84c;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    color:white;
+}
+.recommended h2
+{
+    color:#0e4f1f;
+}
+.recommended>h1:first-child
+{
+    background-color: white;
+    border-radius: 5px;
+    color:#19b84c;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    padding:0.25rem;
+    margin: 0.125rem auto;
+    width:70%;
+}
+/**core features section*/
+.coreFeatures
+{
+    background-color:#ff1b68;
+    margin-top:4rem;
+    padding:0.375rem;
+    color:#ecf0f1;
+    text-align: center;
+}
+.coreFeatures h1
+{
+  font-size:1.1rem; 
+  margin:2rem auto;
+  display: inline-block;
+}
+.coreFeatures ul
+{
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coreFeatures li
+{
+ text-align: center;
+}
+.coreFeatures li p
+{
+    font-size:.9em; 
+    font-weight: bold;
+    margin:1rem auto;
+}
+.coreFeatures li div
+{
+    border:1.5px solid rgba(0,0,0,0.6);
+    width:5rem;
+    height:5rem;
+    border-radius: 50%;
+    background-color:#ecf0f1;
+    padding:1.25rem;
+    margin:auto;  
+}
+
+.coreFeatures li
+{
+ width:30%;
+ display: inline-block;
+}
+
+.pop-up
+{
+    position: fixed;
+    top:30%;
+    right:5%;
+    z-index: 2;
+    width:90%;
+    text-align:center;
+    background-color: white;
+    border:solid 1px #858585;
+    transform:translateY(-3rem);
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.pop-up-title
+{
+  font-weight: bold;
+  font-size: 1rem;
+
+}
+.pop-up-items
+{
+    display: inline-block;
+    margin:0.5rem;
+}
+.pop-up-link
+{
+    text-decoration:none;
+    background-color: #0e4f1f;
+    color:white;
+    font-size: 1rem;
+    padding:0.5rem;
+   
+}
+.pop-up-item-button
+{
+    border:none;
+    background-color: red;
+    color:white;
+    font-size: 1.1rem;
+    padding:0.5rem;
+}
+@media (min-width:30rem)
+{
+    .pop-up
+    {
+        right:15%;
+        width:70%;
+    }
+}
+@media (min-width:40rem)
+{
+  
+    .plan Article
+{
+    width:30%;
+}
+.plan
+{
+    flex-direction: row;
+}
+.pop-up
+    {
+        right:25%;
+        width:50%;
+    }
+.coreFeatures ul
+{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+}
+@media (min-width:60rem)
+{
+    .plan article
+{
+    width:20rem;
+}
+.pop-up
+    {
+        right:35%;
+        width:30%;
+    }
+}

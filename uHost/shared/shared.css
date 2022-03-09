@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mobile-header {
+    position: fixed;
+    background-color: #2ddf5c;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.toggle-button {
+    margin: 0 1rem;
+    height: 2.5rem;
+    width: 10%;
+    background-color: #2ddf5c;
+    border: none;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button__bar {
+    margin: 0.5rem 0;
+    background-color: black;
+    display: block;
+    height: 0.2rem;
+}
+
+#mobile-view {
+    position: fixed;
+    height: 100vh;
+    width: 70vw;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    border: solid 1px rgb(223, 220, 220);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s linear;
+    left: 0;
+}
+
+#mobile-home {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: solid 1px #858585;
+    margin: 0.25rem 2rem;
+    z-index: 3;
+}
+
+.home-link {
+    display: block;
+    width: 2rem;
+}
+
+#mobile-navigation {
+    width: 100%;
+    margin-top: 0.5rem;
+    display: block;
+    z-index: 3;
+}
+
+#mobile-element {
+    width: 100%;
+    text-align: left;
+    display: block;
+    z-index: 3;
+    padding: 0;
+
+}
+
+#mobile-elements {
+
+    display: block;
+    z-index: 3;
+    margin: 0 0 2rem 2rem;
+}
+
+/** header */
+.header {
+    background-color: #2ddf5c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
+/*  home link container*/
+.uHost {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+    display: none;
+}
+
+.home {
+    position: absolute;
+    height: 100%;
+    left: 4%;
+    top: 20%;
+}
+
+.sprite {
+    position: absolute;
+    height: 60%;
+    display: none;
+}
+
+/** navigation*/
+.navigation {
+    text-align: right;
+    width: 80%;
+    display: none;
+
+}
+
+/** un ordered list*/
+.element {
+    margin: .6875rem 1.5rem;
+    display: none;
+}
+
+.elements {
+    display: none;
+}
+
+.link:link,
+.link:visited {
+    text-decoration: none;
+    color: #0c2461;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.44rem 0.32rem;
+}
+
+.link:hover {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.4);
+}
+
+.hosting {
+    animation: move 1s linear  4 alternate;
+}
+
+.host {
+    padding: 0.32rem 0.32rem;
+    border-radius: 5px;
+    background-color: #ff1b68;
+
+}
+
+.host:link,
+.host:visited {
+    color: white;
+}
+
+/*end of un ordered list**/
+/*end of navigation**/
+/*end of header**/
+/** main body*/
+main {
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.button {
+    background-color: #0e4f1f;
+    border: 1px solid #0e4f1f;
+    border-radius: 0.32rem;
+    color: white;
+    padding: 0.32rem;
+    font-weight: bold;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background-color: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
+}
+
+/**footer section */
+footer {
+    background-color: black;
+    padding: 0.125rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+
+}
+
+footer li {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.footer-link,
+.footer-link:active {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #858585;
+
+}
+
+@media (min-width:40rem) {
+    footer li {
+        display: inline-block;
+        margin: 0 auto;
+        width: 20%;
+
+    }
+}
+
+@media (min-width:32rem) {
+    footer li {
+        display: inline-block;
+        margin: 0 auto;
+        width: 20%;
+
+    }
+
+    .sprite,
+    .navigation,
+    .elements,
+    .uHost {
+        display: inline-block;
+    }
+
+    .header,
+    .element {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-header,
+    .mobile-home,
+    .mobile-view,
+    #mobile-navigation,
+    #mobile-element,
+    #mobile-elements {
+        display: none;
+    }
+
+    .link:link,
+    .link:visited {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width:54rem) {
+    .element {
+        width: 50%;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@keyframes move {
+
+    0%,
+    100% {
+        transform-origin: center;
+        transform:rotateZ(0deg);
+
+    }
+
+    50% {
+        transform:rotateZ(15deg);
+        transform-origin: center;
+    }
+
+    75% {
+        transform:rotateZ(-15deg);
+        transform-origin: center;
+    }
+}

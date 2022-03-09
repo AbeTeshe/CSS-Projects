@@ -1,0 +1,72 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+main div
+{
+    text-align: center;
+}
+.signup-title
+{
+    font-size: 1.1rem;
+    margin:0 auto 1rem auto ;
+    display: inline-block;
+    color:#ff1b68;
+}
+label
+{
+   font-weight: bold;
+   font-size:0.7rem;
+   margin:0 1%;
+}
+
+
+[type="text"],[type="password"],[type="email"],select
+{
+    width:98%;
+    display: block;
+    margin:0.5rem auto;
+    height:4vh; 
+    font-size: 1rem;
+    padding:1vh;
+    border:solid 1px rgb(223, 220, 220);
+}
+[type="text"]:focus,[type="password"]:focus,[type="email"]:focus,select:focus
+{
+    background-color:#d8f3df;
+    border-color:#2ddf5c;
+    outline: none;
+}
+[type="text"]:invalid,[type="password"]:invalid,[type="email"]:invalid,select:invalid
+{
+    background-color:#faacac;
+    border-color:red;
+    outline: none;
+}
+[type="checkbox"]
+{
+    width:1rem;
+    height: 1rem;
+}
+button
+{
+   margin:1rem 0.125rem; 
+   display:block;
+}
+@media (min-width:30rem)
+{
+ .signup-page
+{
+   width:30rem;
+   margin:2.5rem auto 0 auto;
+
+}
+label
+{
+    font-size:0.9rem;
+}
+}
+

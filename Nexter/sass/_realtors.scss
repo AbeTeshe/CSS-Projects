@@ -1,0 +1,81 @@
+.realtors {
+    background-color: $color-secondary;
+    grid-column: 1/11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        color: $color-primary;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 0.8rem;
+    }
+
+    .realtors_list {
+        display: flex;
+        flex-direction: column;
+        .realtor {
+            display: flex;
+            margin: 1.5rem;
+
+            .relator_image {
+
+                width: 3rem;
+
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            .realtor_description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 1rem;
+
+                .realtor_name {
+                    margin: 0;
+                    color: $color-grey-light-1;
+                    font-size: 0.9rem;
+                    font-weight: normal;
+                }
+
+                .houses_sold {
+                    align-self: flex-start;
+                    margin: 0;
+                    font-size: 0.5rem;
+                    color: $color-grey-light-2;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:36.5rem) {
+    .realtors {
+        .realtors_list {
+            flex-direction: row;
+        }
+    }
+}
+@media(min-width:49rem) {
+    .realtors {
+        grid-row: 2/3;
+        grid-column: 8/11;
+
+        .realtors_list {
+            flex-direction: column;
+        }
+    }
+}
+@media(min-width:61.5rem)
+{
+    .realtors {
+        grid-row: 1/2;
+        grid-column: 9/12;
+    }
+
+}

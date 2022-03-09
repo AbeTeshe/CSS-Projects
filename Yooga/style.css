@@ -1,0 +1,642 @@
+body {
+  background-color: #797979;
+  font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+/* #f7cac9 */
+.top-nav {
+  display: flex;
+  background-color: #343148;
+  padding: 0.5rem 5rem;
+}
+
+.appoint {
+  display: flex;
+  width: 80%;
+  color: white;
+}
+.appoint h4 {
+  margin-right: 1rem;
+}
+.appoint h4:hover {
+  background: white;
+  color: black;
+}
+.social-nav {
+  margin-left: 6rem;
+  padding: 0;
+}
+
+.fab {
+  color: white;
+  margin-left: 1rem;
+}
+
+.fab:hover {
+  background: white;
+  color: #343148;
+}
+
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  background-color: #f7caa9;
+  padding: 0 5rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+#logo {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+#logo span {
+  text-transform: lowercase;
+  color: black;
+  font-size: 3rem;
+}
+
+.nav-list li {
+  margin-left: 1.5rem;
+  color: white;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  background-color: #f7cac9;
+}
+
+.hero {
+  background-color: #f7cac9;
+  display: flex;
+  padding-bottom: 3rem;
+}
+.hero-text {
+  margin: 7rem 0 0 5rem;
+  padding-right: 10rem;
+}
+
+.hero-text h1 {
+  font-size: 3.7rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.hero-img img {
+  height: 30rem;
+}
+
+.black-btn {
+  width: 8rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  background-color: #343148;
+  color: #f7cac9;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+
+.black-btn:hover {
+  background-color: white;
+  color: #343148;
+}
+
+.about {
+  display: flex;
+  background-color: white;
+  padding: 5rem;
+}
+
+.about-text {
+  padding-top: 3rem;
+}
+
+.instruction {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+
+.about-btn {
+  width: 8rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  background-color: #343148;
+  color: #f7cac9;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  color: #f7cac9;
+  margin-top: 1rem;
+}
+
+.about-btn:hover {
+  background-color: #f7cac9;
+  color: #343148;
+}
+
+.what {
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+
+.blog {
+  width: 30rem;
+  height: 20rem;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  margin: 0 5rem;
+  background-color: white;
+}
+
+.todo2 {
+  display: flex;
+  margin: 0 5rem;
+  background-color: white;
+}
+.service {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border: 0.1px solid #eee;
+  width: 30rem;
+  height: 22rem;
+  text-align: center;
+  text-align: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.service:hover,
+.service.active {
+  background-color: #343148;
+}
+
+.service-icon {
+  margin-bottom: 2rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: #f7cac9;
+  border-radius: 50%;
+  margin-left: 4rem;
+
+  /* transition: pusle-border 2000ms infinite; */
+}
+.service-icon i {
+  font-size: 4.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.service:hover h3,
+.service.active h3 {
+  color: #f7cac9;
+}
+
+.service:hover p,
+.service.active p {
+  color: #ffffff;
+}
+
+@keyframes pusle-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+    opacity: 0;
+  }
+}
+
+.class {
+  text-align: center;
+}
+
+.btn-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnc {
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  width: 7rem;
+  height: 2.2rem;
+  border: 1px solid #343148;
+  background-color: white;
+  text-decoration: none;
+  color: #343148;
+  text-align: center;
+}
+
+.btnc:hover,
+.btnc.active {
+  background-color: #343148;
+  color: white;
+  text-decoration: none;
+}
+
+.class-wrap {
+  margin: 0 3rem;
+  width: 85rem;
+}
+.classes {
+  width: 25.2rem;
+  margin-right: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #eee;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.teacher {
+  display: flex;
+  margin-bottom: 2rem;
+  width: 20rem;
+  border-radius: 2rem;
+  margin-left: 2.5rem;
+  background-color: white;
+  border: 1px solid #343148;
+  align-items: center;
+  height: 2.5rem;
+  position: absolute;
+  top: 14.3rem;
+  left: 0;
+}
+
+.teacher-img {
+  margin-right: 1rem;
+  background-size: cover;
+  border-radius: 50%;
+  height: 2.5rem;
+  background-color: #f7cac9;
+}
+
+.teacher a {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f7cac9;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #343148;
+  text-decoration: none;
+  position: absolute;
+  top: -0.05rem;
+  left: 17.43rem;
+}
+
+.classes:hover a {
+  background-color: #343148;
+  text-decoration: none;
+  color: white;
+}
+
+.classes h3 {
+  margin-top: 2rem;
+  margin-left: -11rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.classes p {
+  margin-left: -6rem;
+}
+
+.discount {
+  margin: 0 3rem;
+  background-image: linear-gradient(
+      rgba(247, 202, 201, 0.7),
+      rgba(247, 202, 201, 0.7)
+    ),
+    url(img/discount-bg.png);
+  background-repeat: no-repeat;
+  background-size: 15rem cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5rem 19rem;
+}
+
+.discount-text {
+  text-align: center;
+}
+.discount-text h1 {
+  margin-left: 2rem;
+}
+
+.discount-text h4 {
+  font-weight: 500;
+}
+
+.discount-text span {
+  font-weight: 700;
+  color: red;
+  font-size: 4rem;
+}
+
+.packages {
+  margin-top: 3rem;
+  text-align: center;
+}
+.plans {
+  margin: 1rem 5rem;
+  display: flex;
+}
+.plan {
+  margin-right: 2rem;
+  width: 25rem;
+  border: 1px solid #eee;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.plan h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.plan sub,
+.plan sup {
+  text-transform: lowercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.plan sup {
+  position: absolute;
+  top: 0.7rem;
+  left: 8.5rem;
+}
+
+.plan-end {
+  background-color: #f7cac9;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.plan-middle {
+  background-color: #343148;
+  position: relative;
+  color: #f7cac9;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+#popular {
+  position: absolute;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #f7cac9;
+  color: #343148;
+  top: 0;
+  left: 18.3rem;
+}
+#hr {
+  margin-top: -0.5rem;
+}
+
+.plan > p {
+  margin-top: -0.5rem;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.plan-btn {
+  width: 8rem;
+  height: 3rem;
+  color: #343148;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1rem 0.5rem 1rem 0;
+}
+
+.end {
+  background-color: #f7cac9;
+  color: #343148;
+}
+
+.middle {
+  background-color: #343148;
+  color: #f7cac9;
+}
+.end:hover {
+  background-color: #343148;
+  color: #f7cac9;
+}
+
+.middle:hover {
+  background-color: #f7cac9;
+  color: #343148;
+}
+
+.testominal-text {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.client {
+  display: flex;
+  margin: 0 5rem;
+}
+
+.client-info {
+  margin-right: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.client-img {
+  border-radius: 50%;
+  position: absolute;
+  top: -4.2rem;
+  left: 9rem;
+  border: 0.8rem solid white;
+}
+
+.client-text {
+  border: 1px solid #eee;
+  width: 25rem;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.second {
+  background-color: #343148;
+}
+
+.second p {
+  color: white;
+}
+
+.second h3 {
+  color: #f7cac9;
+}
+.client-text p {
+  margin-top: 0.5rem;
+}
+
+.trainer-text {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.trainers-list {
+  display: flex;
+  margin: 2rem 5rem;
+}
+
+.trainer {
+  padding: 1rem;
+  border: 1px solid #eee;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.trainer-img {
+  width: 14rem;
+  height: 16rem;
+  margin-bottom: 1.5rem;
+}
+
+.trainer h4 {
+  margin-bottom: 1rem;
+}
+
+.articles {
+  display: flex;
+  margin: 2rem 5rem;
+}
+
+.article {
+  margin-right: 1rem;
+  width: 20rem;
+  border: 1px solid #eee;
+  padding-bottom: 2rem;
+}
+.article-text {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.article-img {
+  width: 20rem;
+  margin-bottom: 1.5rem;
+}
+.article h4 {
+  margin-left: 2rem;
+}
+
+.article-meta {
+  font-size: 0.8rem;
+  display: flex;
+  margin-left: 2rem;
+}
+
+.article-meta + p {
+  margin-left: 2rem;
+}
+
+.article-btn {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #343148;
+
+  text-transform: uppercase;
+}
+
+.article-btn:hover {
+  color: #f7cac9;
+  text-decoration: none;
+}
+
+.article .fa {
+  margin-left: 0.2rem;
+}
+.footer {
+  background: linear-gradient(rgba(52, 49, 72, 0.9), rgba(52, 49, 72, 0.9)),
+    url(../img/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem 0 1rem 0;
+}
+
+.yooga-text {
+  text-transform: uppercase;
+  /* font-size: 3.5rem; */
+  color: #f7cac9;
+}
+
+.yooga-text h1 {
+  margin-top: 3rem;
+}
+
+.yooga-text span {
+  text-transform: lowercase;
+  color: white;
+}
+.footer-text {
+  text-align: center;
+  color: white;
+}
+
+.social-footer {
+  margin: 2rem 0 1rem 0;
+}
+.footer-hr {
+  margin: 0.5rem 8rem;
+  color: #eee;
+}
+
+.footer-right {
+  display: flex;
+  margin: 1rem 8rem;
+  justify-content: space-between;
+  color: white;
+  font-size: 0.2rem;
+}

@@ -1,0 +1,45 @@
+.footer
+{
+    grid-column: 1/11;
+    background-color:$color-secondary;
+    padding:2rem;
+    .nav
+    {
+        display: grid;
+        margin:1rem;
+        grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+        list-style: none;
+        grid-gap: 1.5rem;
+        padding: 0;
+        .nav__item
+        {
+            padding:0.5rem;
+            text-align: center;
+            .nav__link
+            {
+                text-decoration: none;
+                text-align: center;
+                color:$color-grey-light-1;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 0.7rem;
+                
+            }
+        }
+    }
+    .copyright
+    {
+        margin:2rem auto;
+        text-align: center;
+        width:70%;
+        color:$color-grey-light-2;
+        font-size: 0.6rem;
+    }
+}
+@media(min-width:61.5rem)
+{
+    .footer{
+        grid-column: 2/12;
+        grid-row:6/7;
+    }
+}

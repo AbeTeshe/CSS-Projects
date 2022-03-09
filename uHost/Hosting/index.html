@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>uHost Signup</title>
+    <link rel="shortcut icon" href="../favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/shared.css">
+    <link rel="stylesheet" href="start-hosting.css">
+</head>
+<body>
+    <div class="backdrop"></div>
+    <header class="mobile-header">
+        <button class="toggle-button" id="toggle-button">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+        </button>
+    </header>
+
+    <section id="mobile-view">
+            <a href="../index.html" id="mobile-home">
+                <img src="../Images/uhost-icon.png" class="home-link"></a>
+            </a>
+            <nav class="navigation" id="mobile-navigation">
+                    <ul id="mobile-element">
+                        <li class="elements"id="mobile-elements" >
+                            <a href="../Packages/index.html" class="link">Packages</a>
+                         </li>
+                         <li class="elements"id="mobile-elements">
+                             <a href="../Customers/index.html" class="link">Customers</a>
+                         </li>
+                         <li class="elements hosting" id="mobile-elements">
+                             <a href="index.html" class="link  host">Start Hosting</a>
+                         </li>
+                     </ul>
+            </nav>
+    </section>
+    <header class="header">
+        <div class="uHost">
+            <a href="../index.html" class="home"><img src="../Images/uhost-icon.png" class='sprite'></a>
+       </div>
+       <nav class="navigation">
+           <ul class="element">
+               <li class="elements" >
+                   <a href="../Packages/index.html" class="link">Packages</a>
+                </li>
+                <li class="elements">
+                    <a href="../Customers/index.html" class="link">Customers</a>
+                </li>
+                <li class="elements hosting">
+                    <a href="index.html" class="link  host">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
+   </header>
+    <main class="signup-page">
+        <div><h1 class="signup-title">Awesome! Let's dive right in!</h1></div>
+        <form action="index.html" class="signup-form">
+            <label for="title">Title</label>
+            <select id="title">
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+            </select>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name">
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            
+            <input type="checkbox" id="agree-terms">
+            <label for="agree-terms">Agree to
+                <a href="#">Terms &amp; Conditions</a>
+            </label>
+            <button type="submit" class="button">Sign Up</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="footer-link">Support</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script src="../shared/shared.js"></script>
+</html>

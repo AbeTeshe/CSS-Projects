@@ -1,0 +1,48 @@
+$color-primary:rgba(255, 154, 72, 0.5);
+$color-secondary:rgba(255, 0, 0, 0.5);
+$color-tertiary:#00800080;
+$color-quaternary:rgba(0, 4, 255, 0.5);
+$color-5:#8e44ad;
+$color-6:#f1c40f;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: repeat(2, minmax(6rem, 1fr));
+    // grid-gap: 3rem;
+    .item {
+        &--1 {
+            background-color: orangered;
+        }
+
+        &--2 {
+            background-color: yellowgreen;
+        }
+
+        &--3 {
+            background-color: blueviolet;
+        }
+
+        &--4 {
+            background-color: palevioletred;
+        }
+
+        &--5 {
+            background-color: royalblue;
+        }
+
+        &--6 {
+            background-color: goldenrod;
+        }
+
+        &--7 {
+            background-color: crimson;
+        }
+
+        &--8 {
+            background-color: darkslategray;
+        }
+
+    }
+
+}
